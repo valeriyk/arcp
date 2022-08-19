@@ -1,0 +1,22 @@
+[package]
+name = "arc_test"
+version = "0.1.0"
+edition = "2021"
+categories = ["no-std"]
+description = "`core::arch` - Rust's core library architecture-specific intrinsics."
+homepage = "https://github.com/rust-lang/stdarch"
+repository = "https://github.com/rust-lang/stdarch"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[features]
+# stdsimd = []
+
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+
